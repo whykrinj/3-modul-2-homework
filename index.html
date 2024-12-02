@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="night">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black h-full min-h-screen transition-all duration-1000 ease-in-out">
+    <header>
+        <div class="container max-w-[50%] mx-auto flex items-center justify-between">
+            <div class="w-4/5 py-6 text-center">
+                <input id="searchInput" type="text" placeholder="Search..."
+                    class="w-full p-2 border border-cyan-400 shadow-lg shadow-cyan-400 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 bg-base-300">
+            </div>
+
+            <button id="light-btn" class=" bg-cyan-400 text-black px-4 py-2 rounded mr-2"
+                onclick="switchToLight()">Light Mode</button>
+            <button id="dark-btn" class="hidden bg-black text-white px-4 py-2 rounded" onclick="switchToDark()">Dark
+                Mode</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="container max-w-[50%] mx-auto py-6">
+            <div class="flex flex-wrap gap-4" id="cards">
+                <!-- Dynamically generated cards here -->
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
